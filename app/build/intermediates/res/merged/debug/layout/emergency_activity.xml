@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:foreground="#6e93ceff">
+        <CheckBox
+            android:id="@+id/poachers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poachers sighted"
+            />
+        <CheckBox
+            android:id="@+id/HAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Human Animal Conflict"
+            />
+        <CheckBox
+            android:id="@+id/wild_fire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wild fire"
+            />
+        <CheckBox
+            android:id="@+id/carcass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carcass"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="2dp"
+        android:background="#606060"/>
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:hint="Give a short description if possible"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:scrollHorizontally="false" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:clickable="true"
+        android:layout_marginLeft="300dp"
+        android:paddingTop="10dp"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_check_white_24"
+        android:id="@+id/submit"
+        />
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="#eb02a1fe">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/wildlife"
+    />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a43f3f3f">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bit-Track"
+        android:layout_centerHorizontal="true"
+        android:textSize="36dp"
+        android:id="@+id/Title"
+        android:layout_alignParentTop="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage and conserve wildlife"
+            android:layout_below="@+id/Title"
+            android:layout_centerHorizontal="true"
+            android:textSize="17dp"
+            android:id="@+id/motto"
+             />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_below="@+id/Title"
+         android:layout_marginTop="10dp"
+         android:layout_centerHorizontal="true"
+         android:id="@+id/buttons"
+         android:orientation="horizontal"
+         android:layout_height="wrap_content">
+
+
+     </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/buttons"
+          android:id="@+id/lines"
+          android:layout_marginTop="27dp"
+          android:layout_centerHorizontal="true"
+          android:orientation="horizontal"
+          >
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+      </LinearLayout>
+    <LinearLayout
+        android:layout_width="340dp"
+        android:orientation="vertical"
+        android:id="@+id/form"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lines"
+        android:layout_centerHorizontal="true"
+        android:background="#5ed6d7d5">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:hint="name"
+            android:id="@+id/name_field"
+            android:layout_marginLeft="55dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:hint="ranger id"
+            android:id="@+id/id_field"
+           android:layout_marginLeft="55dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="mobile number"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            android:id="@+id/number_field"
+            />
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:id="@+id/google_button"
+                android:background="@drawable/googl"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:text="By signing up you are agreeing to our
+            terms and privacy policy"
+            android:layout_below="@+id/form"
+            android:layout_marginTop="30dp"
+            android:id="@+id/already_text"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:textColor="#FFF"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:background="#bbd6d7d5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:layout_marginLeft="70dp"
+                android:textColor="#ff4545"
+                />
+        </LinearLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>
